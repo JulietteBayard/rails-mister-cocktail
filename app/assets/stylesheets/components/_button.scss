@@ -1,0 +1,49 @@
+.mybutton {
+  font-family: 'Pacifico', cursive;
+  background:#E0877A;
+  text-decoration: none;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:30px;
+  font-size: 20px;
+  padding: 5px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  a {
+    text-decoration: none;
+    color:#fff;
+  }
+}
+
+.mybutton:hover{
+  background:#fff;
+  color:#E0877A;
+  text-decoration: none;
+  a {
+    text-decoration: none;
+    color:#E0877A;
+  }
+}
+
+.mybutton:before, .mybutton:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #E0877A;
+  transition:400ms ease all;
+}
+.mybutton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.mybutton:hover:before, .mybutton:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
